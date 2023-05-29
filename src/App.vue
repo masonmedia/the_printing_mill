@@ -1,14 +1,17 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import Nav from './components/TheNav.vue'
+
 </script>
 
 <template>
-  <header>
-    <Nav></Nav>
-  </header>
+  <div class="page-fade">
+    <header>
+      <Nav></Nav>
+    </header>
 
-  <RouterView />
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>

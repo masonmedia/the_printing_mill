@@ -1,7 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 @import "text";
-// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&display=swap');
 
 
 body {
@@ -9,6 +7,38 @@ body {
     max-width: 1900px;
     margin: 0 auto;
     overflow-x: hidden;
-    // font-family: 'Inter', Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
     font-family: 'Archivo', Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+}
+
+// [v-cloak] {
+//     display: none;
+//     animation: page-fade 1s ease-in-out both;
+// }
+
+.page-fade {
+    animation: page-fade 0.8s ease-in-out both;
+}
+
+@-webkit-keyframes page-fade {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes page-fade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
