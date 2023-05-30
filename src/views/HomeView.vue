@@ -27,7 +27,7 @@
       <div class="row m-3">
         <div class="col-lg-12">
           <!-- <img class="rounded-5 w-100" src="https://images.unsplash.com/photo-1535350356005-fd52b3b524fb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8cHJpbnRpbmd8fHx8fHwxNjg1MDMyMTY4&ixlib=rb-4.0.3&q=80&w=1200" alt=""> -->
-          <img class="rounded-5 w-100" style="min-height: 500px" src="https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="">
+          <img class="rounded-5 w-100" style="object-fit: cover;" src="https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="">
           <!-- bold -->
           <!-- <img class="rounded-5 w-100" src="https://images.unsplash.com/photo-1596299786007-9974099be52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt=""> -->
         </div>
@@ -35,7 +35,7 @@
 
       <div class="py-3"></div>
 
-      <div class="row bg-light" style="padding: 8vh 0 0">
+      <div class="row bg-light" style="padding: 7vh 0 0">
         <div class="col-lg-8 d-flex flex-column my-auto p-5">
           <h5 class="mb-4">About us</h5>
           <h1 class="fs-1 lh-1 ls-base fw-bold">At The Printing Mill, we provide creative and efficient printing solutions to help your business grow. We offer a broad range of services geared toward enterprise level business needs, and specialize in custom projects as well as large run printing. Located in Toronto, we are committed to excellence in quality and service.</h1>

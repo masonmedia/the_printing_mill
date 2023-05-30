@@ -5,7 +5,7 @@ import Nav from './components/TheNav.vue'
 </script>
 
 <template>
-  <div class="page-fade">
+  <div class="page-fade" style="overflow-x: hidden;">
     <header>
       <Nav></Nav>
     </header>
