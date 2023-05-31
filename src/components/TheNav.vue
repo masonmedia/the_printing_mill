@@ -1,13 +1,18 @@
 <script setup>
-
+// image paths
+function getImageUrl(name, ext) {
+  return new URL(`../assets/img/${name}.${ext}`, import.meta.url).href
+}
 </script>
 
 <template>
     <nav class="navbar bg-light fixed-top p-3 border-bottom">
         <div class="container-fluid">
-            <a class="navbar-brand fs-5 fw-900 ls-base pb-0 border-top-0 border-end-0 border-start-0" href="#"
-            style="border: solid 5px #DC3545;">TPM</a>
-            <!-- <a class="navbar-brand fs-5 fw-900 bg-dark text-light p-2 rounded-4" href="#">TPM</a> -->
+            <!-- <a class="navbar-brand fs-5 fw-900 ls-base pb-0 border-top-0 border-end-0 border-start-0" href="#"
+            style="border: solid 5px #DC3545;">TPM</a> -->
+            <router-link to="/">
+                <img class="navbar-brand" style="width: 200px" :src="getImageUrl('tpm_logo_h', 'png')" alt="">
+            </router-link>
             <ul class="nav justify-content-end align-items-center ms-auto d-none d-lg-flex">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -35,7 +40,8 @@
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header border-bottom">
-                        <h5 class="offcanvas-title fw-bold ls-base text-secondary" id="offcanvasRightLabel">The Printing Mill</h5>
+                        <!-- <h5 class="offcanvas-title fw-bold ls-base text-secondary" id="offcanvasRightLabel">The Printing Mill</h5> -->
+                        <img class="navbar-brand p-2" style="width: 200px" :src="getImageUrl('tpm_logo_h', 'png')" alt="">
                         <button type="button" class="btn-close border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -68,12 +74,12 @@ a, .nav-item {
 }
 
 .offcanvas-body {
-    padding: 50vh 30px;
+    padding: 50vh 30px 0;
 }
 
 .offcanvas-body .nav-item a {
-    font-size: 7vmin;
-    line-height: 7vmin;
+    font-size: 50px;
+    line-height: 45px;
     font-weight: 900;
     letter-spacing: -2px;
 }

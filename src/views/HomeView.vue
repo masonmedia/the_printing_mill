@@ -1,13 +1,14 @@
 <script setup>
-// import TheWelcome from '../components/TheWelcome.vue'
-</script>
+function getImageUrl(name, ext) {
+  return new URL(`../assets/img/${name}.${ext}`, import.meta.url).href
+}</script>
 
 <template>
   <main>
     <div class="container-fluid px-0">
       <div class="row" style="padding: 12vh 0 0">
         <div class="col-lg-7 d-flex flex-column my-auto p-5">
-          <h5 class="mb-4 mt-3 mt-lg-0">The Printing Mill</h5>
+          <h5 class="mb-4 mt-3">The Printing Mill</h5>
           <h1 class="display-1 lh-1 ls-1 fw-900">Full spectrum printing solutions for over 30 years</h1>
         </div>
         <div class="col-lg-12 px-5">
@@ -173,6 +174,7 @@
           <h5 class="fw-light mb-0">CEO, Loblaw's</h5>
         </div>
       </div>
+    </div>
       <!-- end testimonials -->
 
       <!-- contact -->
@@ -187,19 +189,20 @@
           <div class="col-lg-12 px-5">
           <hr style="height: 1px" class="mt-4 mb-0">
         </div>
+    </div>  
 
+    <footer>
+      <div class="row"> 
         <div class="d-none d-md-flex col-md-6 text-start px-5 py-4 py-md-5">
-          <h5 class="fw-bold mb-0">The Printing Mill</h5>
+          <img class="navbar-brand" style="width: 200px" :src="getImageUrl('tpm_logo_h', 'png')" alt="The Printing Mill logo image">
         </div>
-        <div class="col-md-6 text-center text-md-end px-5 py-4 py-md-5">
-          <h5 class="fw-light mb-0">© The Printing Mill {{ new Date().getFullYear() }}</h5>
-        </div>
-
+        <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-end text-center text-md-end px-5 py-4 py-md-5">
+          <img class="d-inline d-md-none me-2" style="width: 50px" :src="getImageUrl('tpm_logo_crop', 'png')" alt="The Printing Mill logo">
+          <h5 class="d-none d-md-block fw-light mb-0">© The Printing Mill {{ new Date().getFullYear() }}</h5>
+          <h6 class="d-block d-md-none fw-light mb-0">© The Printing Mill {{ new Date().getFullYear() }}</h6>
         </div>
       </div>
-      
-
-
+    </footer>
 
     </div>
   </main>
