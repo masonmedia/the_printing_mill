@@ -27,7 +27,7 @@ function getImageUrl(name, ext) {
                     <a class="nav-link" href="#">Reviews</a>
                 </li>
                 <li class="nav-item">   
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="mailto:info@theprintingmill.com" target="_blank">
                         <button class="btn btn-dark rounded-5 px-3">Contact Us</button>
                     </a>
                 </li>
@@ -56,7 +56,7 @@ function getImageUrl(name, ext) {
                                 <a class="nav-link" data-bs-dismiss="offcanvas" href="#">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-dismiss="offcanvas" href="#">Contact</a>
+                                <a class="nav-link" data-bs-dismiss="offcanvas" href="mailto:info@theprintingmill.com" target="_blank">Contact</a>
                             </li>
                         </ul>
                     </div>

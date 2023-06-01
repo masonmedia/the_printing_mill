@@ -183,7 +183,9 @@ function getImageUrl(name, ext) {
             <h5 class="mb-4 fw-bold text-secondary">Have a project in mind?</h5>
             <h1 class="display-1 lh-1 ls-1 fw-900">Connect with us!</h1>
             <h5 class="my-4 col-lg-10 offset-lg-1">Thank you for visiting The Printing Mill. We want to help with your next project. Email us about your printing needs and we'll be in touch as soon as possible to discuss details.</h5>
-            <button class="btn btn-dark px-4 rounded-5 mt-2">Get in touch</button>
+            <a href="mailto:info@theprintingmill.com" target="_blank">
+              <button class="btn btn-dark px-4 rounded-5 mt-2">Get in touch</button>
+            </a>
           </div>
 
           <div class="col-lg-12 px-5">
